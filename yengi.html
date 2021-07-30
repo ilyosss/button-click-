@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <style>
+    
+    
+.bu{
+    position: absolute;
+    width: 120px;
+    height: 83px;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(59, 70, 228);
+    margin-left: 40%;
+    margin-top: 5.2%;
+    border-radius: 5px;
+    transition:  active 1s;
+    background-color: rgb(255, 6, 6);
+}
+
+
+.bu:active{
+    background-color: rgb(20, 18, 14);
+    
+}
+
+.bus{
+    position: absolute;
+    width: 120px;
+    height: 83px;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(59, 70, 228);
+    margin-left: 60%;
+    margin-top: 5.2%;
+    border-radius: 5px;
+    background-color: rgb(133, 250, 16);
+}
+
+.bus:active{
+    background-color: white;
+    color: rgb(95, 252, 23);
+}
+
+
+  </style>
+</head>
+
+<body>
+
+    <button id="id1" onmousedown="knopka(event)" class="bu">0</button>
+    <button id="id2" onmousedown="button()" class="bus">0</button>  
+
+    <button id="id3" onmousedown="button1()" class="bu">0</button>
+    <button id="id4" onmousedown="button2()" class="bus">0</button>  
+
+
+<script>
+
+let count = 0
+function knopka(event) {
+
+document.getElementById('id1').innerHTML = ''  + count++ + ''
+
+
+}
+
+let counts = 0
+function button() {
+document.getElementById('id2').innerHTML = ''  + counts++ + ''
+}
+
+let counts1 = 0
+function button1() {
+document.getElementById('id3').innerHTML = ''  + counts1++ + ''
+}
+
+
+
+let counts2 = 0
+function button2() {
+document.getElementById('id4').innerHTML = ''  + counts2++ + ''
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
